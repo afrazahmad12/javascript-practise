@@ -23,21 +23,28 @@
 
 
     function even1(a) {
-      for (let i = 0; i<=a.length; i++) {
+      let evenarray=[];
+      let oddarray=[];
+      for (let i = 0; i<a.length; i++) {
 
         if (a[i]% 2 === 0) {
-          console.log('even')
+         evenarray.push(a[i])
 
         } else {
-          console.log('odd')
+         
+        
+         oddarray.push(a[i])
+      
 
         }
-        console.log('i',a[i])
+        console.log('evenarray',evenarray)
+        console.log('oddarray',oddarray)
+      
       }
 
     }
-
-    console.log(even1([2, 4, 6,1]))
+ 
+    console.log(even1([2, 4, 6,1,3,7]))
     
 
 
